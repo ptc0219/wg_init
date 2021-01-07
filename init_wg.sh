@@ -63,7 +63,7 @@ cat << WG
 
 [Peer]
   PublicKey = ${REMOTE_PUB_KEY}
-  AllowedIPs = 0.0.0.0/0
+  AllowedIPs = 0.0.0.0/0, ::/0
   Endpoint = ${ENDPOINT_HOST}:${ENDPOINT_PORT}
 WG
 ) > /etc/wireguard/${WG_INTERFACE}.conf
